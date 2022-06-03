@@ -73,6 +73,14 @@ export class MusicsService {
   saveMusic(music:any) {
     console.log(music);
   }
+
+  searchMusic(id:any){
+   return this.musicas.find(item=>{
+      return item.id == id
+    })
+  }
+
+
   saveArtista(artista:any) {
     console.log(artista);
   }
